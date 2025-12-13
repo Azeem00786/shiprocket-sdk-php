@@ -1,0 +1,42 @@
+{
+  "name": "hyperzod/shiprocket-sdk-php",
+  "description": "A PHP SDK to integrate Shiprocket with your application.",
+  "keywords": [
+    "hyperzod",
+    "shiprocket-sdk-php"
+  ],
+  "homepage": "https://github.com/hyperzod/shiprocket-sdk-php",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Mohammad Azeem",
+      "email": "azeemmohammad377@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.4|^8.0",
+    "guzzlehttp/guzzle": "^7.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Hyperzod\\ShiprocketSdkPhp\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Hyperzod\\ShiprocketSdkPhp\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
